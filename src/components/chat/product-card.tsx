@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { ProductImage } from "@/components/ui/product-image";
 import { ShoppingCart } from "lucide-react";
 import { toast } from "sonner";
 import type { ProductRecommendation } from "@/lib/chat-parser";
@@ -34,7 +34,7 @@ export function ChatProductCard({ recommendation }: ProductCardProps) {
       className="flex gap-3 rounded-xl border border-botanika-green/20 bg-botanika-dark/80 p-3"
     >
       <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg">
-        <Image
+        <ProductImage
           src={product.image}
           alt={product.name}
           fill

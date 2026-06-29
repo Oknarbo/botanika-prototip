@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import ReactMarkdown from "react-markdown";
-import Image from "next/image";
 import { Bot, User } from "lucide-react";
 import type { ChatMessage } from "@/stores/chat-store";
 import { ChatProductCard } from "./product-card";
@@ -40,11 +39,11 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
       >
         {message.imageUrl && (
           <div className="relative h-32 w-32 overflow-hidden rounded-xl border border-botanika-cream/10">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={message.imageUrl}
               alt="Upload"
-              fill
-              className="object-cover"
+              className="h-full w-full object-cover"
             />
           </div>
         )}

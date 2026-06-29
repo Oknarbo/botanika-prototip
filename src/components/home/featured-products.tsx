@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { ProductImage } from "@/components/ui/product-image";
 import { motion } from "framer-motion";
 import { ShoppingCart } from "lucide-react";
 import { toast } from "sonner";
@@ -39,7 +39,7 @@ export function FeaturedProducts() {
               className="group relative overflow-hidden rounded-2xl border border-botanika-cream/10 bg-botanika-dark/60 transition-all duration-300 hover:border-botanika-green/30 hover:shadow-xl hover:shadow-botanika-green/5"
             >
               <div className="relative aspect-square overflow-hidden">
-                <Image
+                <ProductImage
                   src={product.image}
                   alt={product.name}
                   fill

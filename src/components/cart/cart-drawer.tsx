@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { ProductImage } from "@/components/ui/product-image";
 import Link from "next/link";
 import { Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
 import { toast } from "sonner";
@@ -58,7 +58,7 @@ export function CartDrawer() {
                   className="flex gap-3 rounded-xl border border-botanika-cream/10 p-3"
                 >
                   <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg">
-                    <Image
+                    <ProductImage
                       src={product.image}
                       alt={product.name}
                       fill

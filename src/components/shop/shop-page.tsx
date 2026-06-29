@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { ProductImage } from "@/components/ui/product-image";
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, SlidersHorizontal } from "lucide-react";
@@ -204,7 +204,7 @@ export function ShopPage() {
                 className="group overflow-hidden rounded-2xl border border-botanika-cream/10 bg-botanika-dark/60 transition-all hover:border-botanika-green/30 hover:shadow-lg hover:shadow-botanika-green/5"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
+                  <ProductImage
                     src={product.image}
                     alt={product.name}
                     fill

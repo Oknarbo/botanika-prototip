@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#0f1a14"/>
+  <rect x="40" y="40" width="520" height="520" rx="24" stroke="#22c55e" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M300 420c-60-40-100-90-100-150 0-55 45-100 100-100s100 45 100 100c0 60-40 110-100 150z" fill="#22c55e" fill-opacity="0.15"/>
+  <path d="M300 180v160M220 260h160" stroke="#22c55e" stroke-opacity="0.4" stroke-width="8" stroke-linecap="round"/>
+  <text x="300" y="500" text-anchor="middle" fill="#f5f0e8" fill-opacity="0.5" font-family="system-ui,sans-serif" font-size="22">Botanika</text>
+</svg>
